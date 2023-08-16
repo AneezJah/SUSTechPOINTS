@@ -173,10 +173,10 @@ box = np.array([[1,2,3], [10,4,5], [0,0,0]])
 # psr_to_xyz(box[0], box[1], box[2])
 
 def box_to_nparray(box):
-    return np.array([
+    return np.array([ #map position to location, map 
         [box["position"]["x"], box["position"]["y"], box["position"]["z"]],
-        [box["scale"]["x"], box["scale"]["y"], box["scale"]["z"]],
-        [box["rotation"]["x"], box["rotation"]["y"], box["rotation"]["z"]],
+        [box["scale"]["x"], box["scale"]["y"], box["scale"]["z"]], #leave scale as 1, 1, 1 for now
+        [box["rotation"]["x"], box["rotation"]["y"], box["rotation"]["z"]], #2 of the rotations will always be 0, since we operate on a plane
     ])
     #box_to_nparray({"rotation":{"x":0, "y":np.pi/3, "z":np.pi/2}, "position":{"x":1,"y":2,"z":3}, "scale":{"x":10,"y":2,"z":5}})
 
