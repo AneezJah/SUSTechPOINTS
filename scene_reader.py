@@ -106,11 +106,11 @@ def get_one_scene(s):
     # camera names
     camera = []
     camera_ext = ""
-    cam_path = os.path.join(scene_dir, "camera")
+    cam_path = os.path.join(scene_dir, "img")
     if os.path.exists(cam_path):
         cams = os.listdir(cam_path)
         for c in cams:
-            cam_file = os.path.join(scene_dir, "camera", c)
+            cam_file = os.path.join(scene_dir, "img", c)
             if os.path.isdir(cam_file):
                 camera.append(c)
 

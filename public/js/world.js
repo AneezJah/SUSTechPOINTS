@@ -195,7 +195,7 @@ function Images(sceneMeta, sceneName, frame){
                     _self.on_image_loaded();
                 };
 
-                _self.content[cam].src = 'data/'+sceneName+'/camera/' + cam + '/'+ frame + sceneMeta.camera_ext;
+                _self.content[cam].src = 'data/'+sceneName+'/img/' + cam + '/'+ frame + sceneMeta.camera_ext;
                 console.log("image set")
             });
         }

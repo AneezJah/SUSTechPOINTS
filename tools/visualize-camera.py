@@ -22,7 +22,7 @@ radar_point_size = 8
 
 ############################################################################################3
 # implementation
-imgfolder  = os.path.join(rootdir, "camera", camera)
+imgfolder  = os.path.join(rootdir, "img", camera)
 lidarfolder = os.path.join(rootdir, "pcd")
 labelfolder = os.path.join(rootdir, "label")
 radarfolder = os.path.join(rootdir, "radar")
@@ -214,7 +214,7 @@ for f in frames:
     with open(os.path.join(labelfolder, labelfile)) as tempfile:
         labels  = json.load(tempfile)
 
-    imgfile_path = os.path.join(rootdir, "camera", camera, imgfile)
+    imgfile_path = os.path.join(rootdir, "img", camera, imgfile)
     img = cv2.imread(imgfile_path, cv2.IMREAD_UNCHANGED)
 
 
