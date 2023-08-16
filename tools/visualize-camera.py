@@ -23,7 +23,7 @@ radar_point_size = 8
 ############################################################################################3
 # implementation
 imgfolder  = os.path.join(rootdir, "camera", camera)
-lidarfolder = os.path.join(rootdir, "lidar")
+lidarfolder = os.path.join(rootdir, "pcd")
 labelfolder = os.path.join(rootdir, "label")
 radarfolder = os.path.join(rootdir, "radar")
 

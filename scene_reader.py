@@ -40,7 +40,7 @@ def get_one_scene(s):
 
     scene_dir = os.path.join(root_dir, s)
 
-    frames = os.listdir(os.path.join(scene_dir, "lidar"))
+    frames = os.listdir(os.path.join(scene_dir, "pcd"))
     
     #print(s, frames)
     frames.sort()

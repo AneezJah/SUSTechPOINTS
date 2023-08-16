@@ -33,7 +33,7 @@ function FrameInfo(data, sceneMeta, sceneName, frame){
 
         
     this.get_pcd_path = function(){
-            return 'data/'+ this.scene + "/lidar/" + this.frame + this.sceneMeta.lidar_ext;
+            return 'data/'+ this.scene + "/pcd/" + this.frame + this.sceneMeta.lidar_ext;
         };
     this.get_radar_path = function(name){
         return `data/${this.scene}/radar/${name}/${this.frame}${this.sceneMeta.radar_ext}`;

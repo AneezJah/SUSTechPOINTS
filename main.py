@@ -151,7 +151,7 @@ class Root(object):
     @cherrypy.tools.json_out()
     def auto_annotate(self, scene, frame):
       print("auto annotate ", scene, frame)
-      return pre_annotate.annotate_file('./data/{}/lidar/{}.pcd'.format(scene,frame))
+      return pre_annotate.annotate_file('./data/{}/pcd/{}.pcd'.format(scene,frame))
       
 
 
